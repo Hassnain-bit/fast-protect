@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+  // colors
+
+  --fp-color-blue-hue: 220;
+  --fp-color-blue-saturation: 100%;
+  --fp-color-blue-degree-0: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 0%);
+  --fp-color-blue-degree-10: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 10%);
+  --fp-color-blue-degree-20: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 20%);
+  --fp-color-blue-degree-30: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 30%);
+  --fp-color-blue-degree-40: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 40%);
+  --fp-color-blue-degree-50: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 50%);
+  --fp-color-blue-degree-60: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 60%);
+  --fp-color-blue-degree-70: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 70%);
+  --fp-color-blue-degree-80: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 80%);
+  --fp-color-blue-degree-90: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 90%);
+  --fp-color-blue-degree-93: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 93%);
+  --fp-color-blue-degree-95: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 95%);
+  --fp-color-blue-degree-97: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 97%);
+  --fp-color-blue-degree-98: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 98%);
+  --fp-color-blue-degree-99: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 99%);
+  --fp-color-blue-degree-100: hsl(var(--fp-color-blue-hue), var(--fp-color-blue-saturation), 100%);
+
+  --fp-color-blue-main: hsl(220, 80%, 20%);
+  --fp-color-turquoise-main: hsl(160, 100%, 80%);
+  --fp-color-white: white;
+  --fp-color-black: black;
+
+  // sizes
+
+  --fp-size-max-width: 1136px;
+  --fp-size-section-padding-v: 115px;
+  --fp-size-section-padding-v2: 74px;
+
+  --fp-size-section-margin-top-v: 115px;
+
+}
+
+.fp-text-style-header-big {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.fp-text-style-header-big-special {
+  color: var(--fp-color-turquoise-main);
+  text-shadow: -4px 4px 0px var(--fp-color-white);
+  font-size: 36px;
+  font-weight: 600;
+  font-style: italic;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--fp-color-blue-main);
+  line-height: 1.2;
+}
+
+.fp-text-style-header-large {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.fp-text-style-header-large.light{
+  font-weight: 300;
+}
+
+.fp-text-style-label-bold {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.fp-text-style-label-normal {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.fp-text-style-label-light {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.fp-text-style-body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}

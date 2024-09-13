@@ -1,0 +1,43 @@
+.fp-comp-info-card {
+  height: 225px;
+  width: 100%;
+  border: 1px solid var(--fp-color-blue-main);
+  border-radius: 16px 0;
+  overflow: hidden;
+  background-color: var(--fp-color-blue-degree-95);
+  --fp-comp-info-card-icon-fill: var(--fp-color-turquoise-main);
+  
+  &.bg-white {
+    background-color: var(--fp-color-white);
+    >.head {
+      background-color: var(--fp-color-blue-degree-95);
+    }
+  }
+
+  >.head {
+    border-radius: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+    min-height: 48px;
+    background-color: var(--fp-color-white);
+    padding: 0 24px;
+    backdrop-filter: blur(7.400000095367432px) brightness(100%);
+    >.icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  >.info {
+    padding: 24px;
+    padding-right: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fp-comp-info-card {
+    height: auto;
+  }
+}

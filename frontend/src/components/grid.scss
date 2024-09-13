@@ -1,0 +1,12 @@
+.fp-comp-grid {
+  display: grid;
+  width: 100%;
+  gap: var(--grid-gutter);
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+
+  >.fp-comp-grid-cell {
+      grid-column: span min(var(--grid-cell-span), var(--grid-columns));
+      width: 100%;
+      overflow: hidden;
+  }
+}

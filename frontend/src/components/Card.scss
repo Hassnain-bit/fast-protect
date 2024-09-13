@@ -1,0 +1,24 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem 0 1rem 1rem; // rounded-tl-2xl rounded-br-2xl
+    border: 1px solid #0a255c;
+    width: 75%; // w-3/4
+
+    .card-header {
+        display: flex;
+        gap: 0.5rem; // gap-2
+        padding-left: 1.5rem; // pl-6
+        padding-top: 0.75rem; // py-3
+        padding-bottom: 0.75rem; // py-3
+        border-radius: 1rem 0 1rem 1rem; // rounded-tl-2xl
+        background-color: white;
+
+       
+    }
+
+    .card-content {
+        font-weight: 300; // font-light
+        padding: 1.5rem; // p-6
+    }
+}

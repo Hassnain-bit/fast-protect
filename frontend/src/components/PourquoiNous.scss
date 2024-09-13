@@ -1,0 +1,23 @@
+.pourquoi-nous {
+    height: 100%; // h-full
+    padding-top: 2.5rem; // py-10
+    padding-bottom: 2.5rem; // py-10
+    padding-left: 7rem; // px-28
+    padding-right: 7rem; // px-28
+    background-color: #e5eeff;
+
+    .title {
+        font-size: 1.5rem; // text-2xl
+        margin-top: 1.25rem; // my-5
+        margin-bottom: 1.25rem; // my-5
+        font-weight: 500; // font-medium
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 5rem; // gap-20
+        margin-left: 7rem; // mx-28
+        margin-right: 7rem; // mx-28
+    }
+}

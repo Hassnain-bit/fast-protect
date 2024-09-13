@@ -1,0 +1,37 @@
+.fp-comp-section-label {
+  width: fit-content;
+  height: 48px;
+  min-height: 48px;
+  border: 1px solid var(--fp-color-blue-main);
+  border-radius: 16px 0;
+  padding: 0px 0px 7px 7px;
+  background-color: var(--fp-color-white);
+  --fp-comp-section-label-icon-fill: var(--fp-color-turquoise-main);
+
+  &.bg-white {
+    background-color: var(--fp-color-blue-degree-95);
+
+    >.container {
+      background-color: var(--fp-color-white);
+    }
+  }
+
+  >.container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--fp-color-blue-degree-95);
+    border-radius: 16px 0;
+    height: 100%;
+    padding: 0 16px;
+
+    >.title {
+      white-space: nowrap;
+    }
+
+    >.icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

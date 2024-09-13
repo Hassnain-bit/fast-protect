@@ -1,0 +1,76 @@
+.sectionConsultation .holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.sectionConsultation .holder .cta {
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectionConsultation .holder .cta p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sectionConsultation .holder .cta a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    width: fit-content;
+    padding: 8px 20px;
+    border-radius: 16px 0 0 0;
+}
+
+.sectionConsultation .holder .cta a img {
+    display: flex;
+}
+
+.sectionConsultation .holder .cta a span {
+    font-size: 18px;
+}
+
+.sectionConsultation .holder .info {
+    background-color: #fff;
+    border-radius: 14px;
+    max-width: 313px;
+    padding: 14px 16px 28px;
+    text-align: end;
+    position: relative;
+}
+
+.sectionConsultation .holder .info p:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.sectionConsultation .holder .info p:nth-child(2) {
+    font-weight: 300;
+}
+
+.sectionConsultation .holder .info div {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 3%);
+}
+
+@media (max-width: 768px) {
+    .sectionConsultation .holder {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .sectionConsultation .holder .cta {
+        max-width: none;
+    }
+
+    .sectionConsultation .holder .info {
+        max-width: none;
+        text-align: center;
+    }
+
+}

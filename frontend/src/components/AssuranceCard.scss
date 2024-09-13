@@ -1,0 +1,72 @@
+.assurance-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0a255c;
+  border-radius: 16px 0;
+  height: fit-content;
+
+
+  &:nth-of-type(3n+2) {
+    margin-top: 16px;
+    /* 2nd card in each row */
+  }
+
+  &:nth-of-type(3n+3) {
+    margin-top: 32px;
+    /* 3rd card in each row */
+  }
+
+
+
+  &__image {
+    border-radius: 16px 0 0 0;
+    padding: 8px 8px 0 0;
+    height: 154px;
+    object-fit: cover;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #99ffdd;
+    border-radius: 0 0 20px 0;
+    padding: 13px 0 13px 24px;
+    margin-right: 8px;
+
+    img {
+      display: flex;
+    }
+  }
+
+  &__content {
+    padding: 20px 24px 60px 24px;
+    background-color: #e5eeff;
+    border-radius: 0 0 16px 0px;
+
+    h3 {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-weight: 300;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .assurance-card {
+    &:nth-of-type(3n+2) {
+      margin-top: 0px;
+      /* 2nd card in each row */
+    }
+
+    &:nth-of-type(3n+3) {
+      margin-top: 0px;
+      /* 3rd card in each row */
+    }
+  }
+}

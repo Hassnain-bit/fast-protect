@@ -1,0 +1,97 @@
+.fp-comp-carousel-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--fp-color-blue-main);
+  border-radius: 16px 0;
+  padding: 0 0 7px 7px;
+  overflow: hidden;
+  background-color: var(--fp-color-white);
+  --fp-comp-carousel-card-arrow-fill: var(--fp-color-turquoise-main);
+
+  >.container {
+    border-radius: 16px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    >.images {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      height: calc(100% - 48px);
+      width: 100%;
+      overflow: hidden;
+
+      >.image {
+        z-index: 1;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        transform: skewX(-15deg);
+
+        >img {
+          transform: skewX(15deg) scale(1.3);
+          display: flex;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: saturate(0);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--fp-color-blue-main);
+          mix-blend-mode: color;
+        }
+      }
+      
+      >.image:first-child,
+      >.image:last-child {
+        filter: blur(5px);
+        z-index: 0;
+        transform: skewX(-15deg) scale(2);
+      }
+    }
+
+    >.foot {
+      background-color: var(--fp-color-blue-degree-95);
+      height: 48px;
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+
+      >.arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 48px;
+        width: 48px;
+        height: 100%;
+        cursor: pointer;
+      }
+
+      >.titles {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        overflow: hidden;
+
+        >.title {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

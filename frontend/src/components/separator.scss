@@ -1,0 +1,15 @@
+.fp-comp-separator {
+  background-color: var(--fp-comp-separator-color);
+
+  &.orientation-vertical {
+    width: 1px;
+    min-width: 1px;
+    height: var(--fp-comp-separator-length);
+  }
+
+  &.orientation-horizontal {
+    height: 1px;
+    min-height: 1px;
+    width: var(--fp-comp-separator-length);
+  }
+}

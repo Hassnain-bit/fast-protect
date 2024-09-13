@@ -1,0 +1,73 @@
+.footer {
+    background-color: #e5eeff; // bg-[#e5eeff]
+    padding-top: 3rem; // py-5
+    padding-bottom: 3rem; // py-5
+    height: 100%; // h-full
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem; // text-2xl
+
+        p {
+            font-size: 1.7rem;
+            font-style: italic;
+        }
+    }
+
+    .nav-container {
+        display: flex;
+        font-weight: 400; // font-normal
+        justify-content: center;
+        gap: 6rem; // gap-24
+        padding-top: 1.25rem; // py-5
+        padding-bottom: 1.25rem; // py-5
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem; // gap-3
+            border-right: 2px solid #0a255c; // border-r-2 border-[#0a255c]
+            padding-right: 8rem; // pr-32
+            justify-content: center;
+
+            &.center-links {
+
+                li {
+
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem; // gap-3
+            justify-content: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem; // gap-2
+                font-weight: 300; // font-light
+            }
+        }
+    }
+
+    @media (max-width: 940px) {
+        .nav-container {
+            flex-direction: column;
+            gap: 3rem;
+
+            ul{
+                padding-right: 0rem; 
+                padding-bottom: 3rem; 
+                border-right: 0;
+                border-bottom: 1px solid #0a255c;
+            }
+        }
+    }
+}

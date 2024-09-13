@@ -1,0 +1,144 @@
+.sectionRegistration {
+    margin-top: 115px;
+    padding: 74px 0;
+    position: relative;
+}
+
+.sectionRegistration .layout{
+    position: relative;
+    z-index: 1;
+}
+
+.sectionRegistration .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 90px;
+}
+
+.sectionRegistration .grid .grid-item,
+.sectionRegistration .protection .grid-item {
+    height: auto;
+    width: 100%;
+    border: 1px solid var(--fp-color-blue-main);
+    border-radius: 16px 0;
+    overflow: hidden;
+    background-color: var(--fp-color-white);
+    --fp-comp-info-card-icon-fill: var(--fp-color-turquoise-main);
+}
+
+.sectionRegistration .grid .grid-item .head,
+.sectionRegistration .protection .grid-item .head {
+    border-radius: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+    min-height: 48px;
+    background-color: #99FFDD;
+    padding: 0 24px;
+    backdrop-filter: blur(7.400000095367432px) brightness(100%);
+}
+
+.sectionRegistration .protection .grid-item .head {
+    width: fit-content;
+}
+
+.sectionRegistration .grid .grid-item .head .icon,
+.sectionRegistration .protection.grid-item .head .icon {
+    display: flex;
+}
+
+.sectionRegistration .grid .grid-item .info,
+.sectionRegistration .protection .grid-item .info {
+    padding: 10px 24px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 90%;
+}
+
+.sectionRegistration .grid .grid-item .info .title,
+.sectionRegistration .protection .grid-item .info .title {
+    border-radius: 16px 0;
+    border: 1px solid var(--fp-color-blue-main);
+    width: fit-content;
+    padding: 8px 24px;
+}
+
+.sectionRegistration .grid .grid-item .info p,
+.sectionRegistration .protection .grid-item .info p {
+    font-weight: 300;
+    padding: 0 36px;
+}
+
+.sectionRegistration .grid .grid-item .info .tags {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.sectionRegistration .grid .grid-item .info .tags .tags-item {
+    border-radius: 16px 0;
+    width: fit-content;
+    padding: 8px 24px;
+    background-color: var(--fp-color-blue-degree-95);
+}
+
+.sectionRegistration .protection {
+    margin-top: 28px;
+}
+
+.sectionRegistration .protection .ifYouAre {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.sectionRegistration .protection .ifYouAre .ifYouAre-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--fp-color-blue-degree-95);
+    padding: 12px 0px;
+    justify-content: center;
+    border-right: 1px solid var(--fp-color-blue-main);
+}
+
+.sectionRegistration .protection .ifYouAre .ifYouAre-item:last-child {
+    border-right: 0;
+}
+
+.sectionRegistration .protection .ifYouAre .ifYouAre-item .icon {
+    display: flex;
+}
+
+@media (max-width: 940px) {
+    .sectionRegistration .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .sectionRegistration .protection .ifYouAre {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sectionRegistration .protection .ifYouAre .ifYouAre-item:nth-child(2) {
+        border-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .sectionRegistration .protection .ifYouAre {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .sectionRegistration .protection .ifYouAre .ifYouAre-item {
+        border-right: 0;
+        border-bottom: 1px solid var(--fp-color-blue-main);
+    }
+
+    .sectionRegistration .protection .ifYouAre .ifYouAre-item:last-child {
+        border-bottom: 0px;
+    }
+}

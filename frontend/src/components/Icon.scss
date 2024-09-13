@@ -1,0 +1,19 @@
+.icon-container {
+    border: 1px solid #0a255c;
+    border-radius: 1rem 0 1rem 1rem; // rounded-tl-2xl rounded-br-2xl
+    background-color: white;
+    display: inline-block;
+
+    .icon-content {
+        display: flex;
+        gap: 0.5rem; // gap-2
+        align-items: center;
+        justify-content: center;
+        background-color: #e5eeff;
+        margin-left: 0.25rem; // ml-1
+        margin-bottom: 0.25rem; // mb-1
+        padding: 0.5rem; // p-2
+        border-radius: 1rem 0 1rem 1rem; // rounded-br-2xl rounded-tl-2xl
+        font-weight: 300; // font-light
+    }
+}

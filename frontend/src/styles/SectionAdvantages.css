@@ -1,0 +1,68 @@
+.sectionAdvantages {
+    margin-top: 115px;
+    padding: 74px 0;
+    position: relative;
+}
+
+.sectionAdvantages .details {
+    position: relative;
+    z-index: 1;
+}
+
+.sectionAdvantages .details .grid-layer {
+    max-width: 866px;
+    margin: 0 auto;
+}
+
+.sectionAdvantages.subscription .details .grid-layer {
+    max-width: 100%;
+}
+
+.sectionAdvantages .details .grid-layer .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 60px 96px;
+}
+
+.sectionAdvantages.subscription .details .grid-layer .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.sectionAdvantages.subscription .details .grid-layer .grid .fp-comp-grid-cell:nth-child(2) {
+    margin-top: 16px;
+}
+
+.sectionAdvantages.subscription .details .grid-layer .grid .fp-comp-grid-cell:nth-child(3) {
+    margin-top: 32px;
+}
+
+@media (max-width: 860px) {
+    .sectionAdvantages.subscription .details .grid-layer .grid .fp-comp-info-card {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionAdvantages .details .grid-layer .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 36px;
+    }
+
+    .sectionAdvantages.subscription .details .grid-layer .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .sectionAdvantages.subscription .details .grid-layer .grid .fp-comp-info-card {
+        height: auto;
+    }
+
+    .sectionAdvantages.subscription .details .grid-layer .grid .fp-comp-grid-cell:nth-child(2) {
+        margin-top: 0px;
+    }
+    
+    .sectionAdvantages.subscription .details .grid-layer .grid .fp-comp-grid-cell:nth-child(3) {
+        margin-top: 0px;
+    }
+}
